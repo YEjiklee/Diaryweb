@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ko" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- IE 문서 mode 표시 종류 선언 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- user-scalable font 고정, -> -webkit-text-size-adjust로 바꿔도 됨. -->
     <title>Diary index web</title>
-    <link rel="icon" href="./icon/pinned-octocat.svg">
+    <!-- link htef 1. css/a.css 2. ./css/a.css -->
+    <link rel="icon" href="icon/pinned-octocat.svg" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
-  <body>
+  <body class="heart">
+
+    <div id="wrapper" class="shell">
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- Script htef 1. js/b.js 2. ./js/b.js -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.scrollex.min.js"></script>
+			<script src="js/jquery.scrolly.min.js"></script>
+    <!-- jquery Library, down1(Layout), down2(browser) -->
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/index.js"></script>
+    <!-- Script Why run on the body $(window).on('load', function () 선언,
+    Script 로드 후, 실행 되도록 해놨음. head안에 해도 되지만 여기 해놓는 것이 원칙상 맞다. ?라고 배움. -->
 
   </body>
 </html>
